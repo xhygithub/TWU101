@@ -19,6 +19,26 @@ public class NumberExercise {
             System.out.println();
         }
     }
+
+    public static void generate(int m) {
+        int n = m;
+
+        System.out.print("The prime factorization of " + n + " is: ");
+
+        // for each potential factor i
+        for (int i = 2; i*i <= n; i++) {
+
+            // if i is a factor of N, repeatedly divide it out
+            while (n % i == 0) {
+                System.out.print(i + " ");
+                n = n / i;
+            }
+        }
+
+        // if biggest factor occurs only once, n > 1
+        if (n > 1) System.out.println(n);
+        else       System.out.println();
+    }
     public static void main(String[] args) {
         System.out.println("Triangle Exercises:");
         System.out.println("*");
@@ -105,5 +125,7 @@ public class NumberExercise {
         }
 
         FizzBuzz();
+        generate(30);
+        generate(130);
     }
 }
