@@ -2,6 +2,23 @@
  * Created by twcn on 3/1/16.
  */
 public class NumberExercise {
+    public static void FizzBuzz() {
+        for(int n = 1; n <= 100; n++) {
+            Boolean flag = true;
+            int num1 = 3, num2 = 5;
+            if(n % num1 == 0) {
+                System.out.print("Fizz");
+                flag = false;
+            }
+            if(n % num2 == 0) {
+                System.out.print("Buzz");
+                flag = false;
+            }
+            if(flag)
+                System.out.print(n);
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Triangle Exercises:");
         System.out.println("*");
@@ -86,5 +103,7 @@ public class NumberExercise {
             }
             System.out.println();
         }
+
+        FizzBuzz();
     }
 }
