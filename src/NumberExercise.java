@@ -28,5 +28,63 @@ public class NumberExercise {
             System.out.println("");
         }
 
+        System.out.println("Diamond Exercises");
+        System.out.println("Isosceles Triangle");
+        int p = 10;
+        for (int i = 1; i <= p; i++) {
+            for (int x = 1; x <= p - i; x++) {
+                System.out.print(" ");
+            }
+            for (int y = 1; y <= 2 * i - 1; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Diamond");
+        p = 10;
+        for (int i = 1; i <= p; i++) {
+            for (int x = 1; x <= p - i; x++) {
+                System.out.print(" ");
+            }
+            for (int y = 1; y <= 2 * i - 1; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (n = p - 1; n > 0; n--) {
+            for (int m = 1; m <= p - n; m++) {
+                System.out.print(" ");
+            }
+            for (int y = 1; y <= 2 * n - 1; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        System.out.println("Diamond with Name:");
+
+        p = 3;
+        for (int i = 1; i <= p - 1; i++) {
+            for (int x = 1; x <= p - i; x++) {
+                System.out.print(" ");
+            }
+            for (int y = 1; y <= 2 * i - 1; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("Haiyan");
+        for (n = p - 1; n > 0; n--) {
+            for (int m = 1; m <= p - n; m++) {
+                System.out.print(" ");
+            }
+            for (int y = 1; y <= 2 * n - 1; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
